@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+          <div class="menu-bar">
+              <img src="./images/icon-menu.svg" class="menu" alt=""">
+          </div>
+          <div class="logo">
+            <img src="./images/logo.svg" alt="logo" width="100px">
+         </div>
+
+          <div class="nav-ul">
+             <ul>
+                <li class="nav-link"><a href="#">Collections</a></li>
+                <li class="nav-link"><a href="#">Men</a></li>
+                <li class="nav-link"><a href="#">Women</a></li>
+                <li class="nav-link"><a href="#">About</a></li>
+                <li class="nav-link"><a href="#">Contact</a></li>
+             </ul>
+          </div>
+        </nav>
+
+
+        <div class="profile">
+          <div class="chart">
+              <!-- <img src="./images/icon-cart.svg" alt="icon-chart" width="20px"> -->
+              <button class="chart-btn">
+                <span class="indicator"></span> 
+                <img src="./images/icon-cart.svg" alt="icon-chart" width="20px">
+              </button>
+              <div class="cart-wrp invisible">
+                 <p class="cart-heading">cart</p>
+                 <div class="divider"></div>
+                 <div class="cart-content empty">
+                    <p>your cart is empty</p>
+                 </div>
+              </div>
+          </div>
+
+          <div class="profile-pic">
+             <button class="profile-btn"><img src="./images/image-avatar.png" alt="image-avatar" width="35px"></button>
+          </div>
+        </div>
+
+    </header>
+
+    <div class="overlay"></div>
+    <div class="mobile-nav">
+       <div><img src="./images/icon-close.svg" class="Exit" alt=""></div>
+        <ul>
+           <li class="mobile-link"><a href="#">Collections</a></li>
+           <li class="mobile-link"><a href="#">Men</a></li>
+           <li class="mobile-link"><a href="#">Women</a></li>
+           <li class="mobile-link"><a href="#">About</a></li>
+           <li class="mobile-link"><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!--MAIN BODY-->
+         <div class="container">
+             <div class="slide-image">
+                <div class="large-image">
+                  <img src="./images/image-product-1.jpg" alt="" class="main-thumbnail" width="400px">
+
+               </div>
+                  <div class="mobile-thumb hidden">
+                    <img src="./images/image-product-1.jpg" class="thumb-mob" alt="">
+                      <!-- Next and previous buttons -->
+                      <button id="next"><img src="./images/icon-next.svg" alt=""></button>
+                      <button id="previous"><img src="./images/icon-previous.svg" alt=""></button>
+                  </div>
+                
+        
+
+                <div class="mini-image">
+                   <div class="column">
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="" class="selected">
+                   </div>
+                  <div class="column">
+                    <img src="./images/image-product-2-thumbnail.jpg" alt="">
+                  </div>
+                   <div class="column">
+                    <img src="./images/image-product-3-thumbnail.jpg" alt="">
+                   </div>
+                   <div class="column">
+                    <img src="./images/image-product-4-thumbnail.jpg" alt="">
+                   </div>
+                </div>
+             </div>
+
+            <div class="slide-text">
+                <p class="slide-p">Sneaker Company</p>
+               <div class="slide-content">
+                <h1 class="content-text">Fall Limited Edition Sneakers</h1>
+                <p class="info">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                  durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                <div class="price"> 
+                 <div class="price-tag">
+                  <span class="price">$125.00</span>
+                  <span class="Discont">50%</span>
+                 </div>
+                 <small>$125.00</small>
+                </div>
+
+                <div class="button">
+                   <div class="amount-btn">
+                      <button id="minus">
+                        <img src="./images/icon-minus.svg" alt="">
+                      </button>
+                      <p class="amount">0</p>
+                      <button id="plus">
+                        <img src="./images/icon-plus.svg" alt="">
+                      </button>
+                   </div>
+
+                   <button class="add_btn">
+                     <img src="./images/icon-cart.svg" alt="" class="cart-btn"> Add to cart
+                   </button>
+                </div>
+               </div>
+            </div>
+         </div>
+  
+         <!--LIGHT BOX-->
+          <div class="Lightbox invisible">
+              <div class="Lightbox-container">
+                 <button class="close-btn"><img src="./images/icon-close.svg" class="close-ligtbox" alt="close"></button>
+                 <img src="./images/image-product-1.jpg" alt="" class="main-thumbnail">
+                 <div class="preview">
+                     <img src="./images/image-product-1-thumbnail.jpg" alt="product" class="selected">
+                     <img src="./images/image-product-2-thumbnail.jpg" alt="product">
+                     <img src="./images/image-product-3-thumbnail.jpg" alt="product">
+                     <img src="./images/image-product-4-thumbnail.jpg" alt="product">
+                 </div>
+              </div>
+          </div> <br> <br> <br> <br>
+
+          <script src="js/Script.js"></script>
+</body>
+</html>
